@@ -1,0 +1,71 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700|Open+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Poppins:600,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap');
+
+
+
+//Fonts and text
+h3 {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: $primaryColor;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+li {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+span {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-transform: inherit;
+  font-family: inherit;
+}
+
+a,
+.a {
+  font-family: inherit;
+  text-decoration: none;
+  font-family: inherit;
+  color: $primaryColor;
+}
+
+thead{
+  th {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+tbody {
+  th {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+  }
+}

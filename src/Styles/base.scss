@@ -1,0 +1,143 @@
+//Mixins
+@import '_mixins.scss';
+
+//Colors
+@import '_colors.scss';
+
+//Fonts
+@import '_fonts.scss';
+
+//Variables
+@import '_staticVariables.scss';
+@import '_dynamicVariables.scss';
+
+//Components
+@import 'Components/router.scss';
+@import 'Components/boxContainer.scss';
+@import 'Components/popup.scss';
+@import 'Components/header.scss';
+@import 'Components/navigation.scss';
+@import 'Components/sectionCarousel.scss';
+@import 'Components/footer.scss';
+@import 'Components/teamCard.scss';
+@import 'Components/companies.scss';
+@import 'Components/schedule.scss';
+@import 'Components/ticketCreator.scss';
+
+//Views
+@import 'Views/appView.scss';
+@import 'Views/homeView.scss';
+@import 'Views/speakersView.scss';
+@import 'Views/scheduleView.scss';
+@import 'Views/recapView.scss';
+@import 'Views/teamView.scss';
+
+html {
+  background-color: #ffffff;
+}
+
+body{
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+*{
+  padding: 0;
+  border: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-appearance: none;
+  color: $primaryTextColor;
+}
+
+svg {
+  fill: $darkColor;
+  width: 32px;
+  height: 32px;
+}
+
+.error-message {
+  color: $redColor;
+}
+
+//Containers
+.content-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  >* {
+    display: flex;
+    flex: 1 1 auto;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 0;
+    overflow: hidden;
+    margin: 0 5px;
+    align-self: center;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+  >* {
+    padding: 2px 0;
+    max-width: 100%;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.content-width {
+  width: $desktopContentWidth;
+  max-width: $maxContentWidth;
+  margin: 0 auto;
+}
+
+//Other
+.horizontal-dividing-line {
+  height: 1px;
+  margin: 5px 0px;
+  background-color: $grayColor;
+}
+
+@include tablet {
+
+  //Containers
+  .content-width {
+    width: $tabletContentWidth;
+  }
+
+}
+
+@include mobile {
+
+  //Containers
+  .content-row {
+    flex-direction: column;
+    > * {
+      margin: 5px 0px;
+      align-self: auto;
+      overflow: unset;
+      flex-basis: unset;
+    }
+  }
+
+  .content-width {
+    width: $mobileContentWidth;
+  }
+
+}

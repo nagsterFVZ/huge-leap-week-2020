@@ -1,0 +1,19 @@
+.header{
+    .headerIMG{
+        display:inline;
+    }
+    .headerIMGMobile{
+        display:none;
+    }
+}
+  
+@include mobile {
+    .header{
+        .headerIMG{
+            display:none;
+        }
+        .headerIMGMobile{
+            display:inline;
+        }
+    }
+}

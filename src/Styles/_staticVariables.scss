@@ -1,0 +1,16 @@
+//Content sizes
+$mobileContentWidth: calc(100% - 50px);
+$tabletContentWidth: calc(100% - 80px);
+$desktopContentWidth: calc(100% - 120px);
+$maxContentWidth: 1200px;
+
+//Navigation
+$navigationLeftMenuWidth: 280px;
+
+//Interaction
+$clickInteractionOpacity: 0.7;
+$hoverTransitionDuration: 0.1s;
+
+//Other
+$borderRadius: 2px;
+$boxShadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);

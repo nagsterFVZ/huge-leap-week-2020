@@ -1,0 +1,10 @@
+.box-container {
+  background-color: #ffffff;
+  border-radius: $borderRadius;
+  box-shadow: $boxShadow;
+  >.content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+}

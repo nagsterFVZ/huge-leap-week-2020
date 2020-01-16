@@ -1,0 +1,23 @@
+//.card{
+    //maxWidth: 345;
+//}
+.media {
+   height: 240;
+}
+.card {
+    height: 730px;
+    position: relative;
+}
+.actions{
+    position: absolute;
+    bottom: 0px;
+}
+@include mobile {
+    .card {
+        height: inherit;
+    }
+    .actions{
+        position: relative;
+        bottom: 0px;
+    }
+}

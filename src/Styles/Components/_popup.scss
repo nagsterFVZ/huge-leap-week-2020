@@ -1,0 +1,25 @@
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(#000000, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  overflow: hidden;
+  >.container {
+    display: flex;
+    width: calc(100% - 40px);
+    max-height: calc(100% - 120px);
+    max-width: 600px;
+  }
+  &.active {
+    display: flex;
+  }
+}

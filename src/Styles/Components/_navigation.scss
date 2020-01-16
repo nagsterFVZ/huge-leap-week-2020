@@ -1,0 +1,166 @@
+.navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    height: 58px;
+    background-color: rgba(2, 136, 209, 1);
+    box-shadow: 0 0 2px 1px rgba(2, 136, 209, 0.4);
+    >.content {
+      display: flex;
+      flex: 0 0 auto;
+      align-items: center;
+      height: 100%;
+      >.menu-button {
+        display: none;
+        width: 40px;
+        height: 40px;
+        fill: #ffffff;
+        cursor: pointer;
+      }
+      >.left-container {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        >.logo {
+            font-family: 'Poppins', sans-serif;
+          font-size: 40px;
+          color: #ffffff;
+          cursor: pointer;
+        }
+      }
+      >.right-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        >.menu {
+          position: relative;
+          display: flex;
+          flex: 0 0 auto;
+          flex-direction: row;
+          align-items: center;
+          height: 100%;
+          margin-right: -8px;
+          >.menu-items {
+            z-index: 1;
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: row;
+            margin-right: 10px;
+            >* {
+              font-family: 'Roboto', sans-serif;
+              transition: opacity 0.2s;
+              font-size: 22px;
+              color: #ffffff;
+              padding: 2px;
+              margin: 4px;
+              cursor: pointer;
+              &.active,
+              &:hover {
+                color: $secondaryColor;
+              }
+            }
+          }
+          >.social-media-items {
+            z-index: 0;
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: row;
+            margin: 4px;
+            >* {
+              transition: opacity 0.2s;
+              display: flex;
+              margin: 2px;
+              opacity: 0.5;
+              >svg {
+                width: 25px;
+                height: 25px;
+                margin: 2px;
+                fill: #ffffff;
+              }
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+    @include mobile {
+      >.content {
+        >.menu-button {
+          display: flex;
+        }
+        >.left-container {
+          justify-content: center;
+          margin-right: 40px;
+          >.logo {
+            font-family: 'Poppins', sans-serif;
+          font-size: 22px;
+          color: #ffffff;
+          cursor: pointer;
+        }
+        }
+        >.right-container {
+          transition: height 0.5s;
+          position: fixed;
+          left: 0;
+          top: 58px;
+          right: 0;
+          z-index: 100;
+          justify-content: center;
+          align-items: center;
+          height: 0;
+          background-color: rgba(2, 136, 209, 1);
+          overflow: hidden;
+          >.menu {
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 60px;
+            margin-right: 0;
+            >.menu-items {
+              transition: opacity 0.25s;
+              flex-direction: column;
+              margin: 40px 0;
+              opacity: 0;
+              >* {
+                font-size: 48px;
+                margin: 2px;
+              }
+            }
+            >.social-media-items {
+              transition: opacity .25s;
+              position: absolute;
+              bottom: 60px;
+              opacity: 0;
+              >* {
+                >svg {
+                  width: 40px;
+                  height: 40px;
+                }
+              }
+            }
+          }
+          &.active {
+            height: calc(100vh - 60px);
+            >.menu {
+              >.menu-items {
+                opacity: 1;
+              }
+              >.social-media-items {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

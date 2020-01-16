@@ -1,0 +1,12 @@
+# Options
+IndexOptions FancyIndexing
+Options All
+Options -Indexes
+Options -MultiViews
+DirectorySlash Off
+
+# RewriteOptions inherit
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . /index.html [L]

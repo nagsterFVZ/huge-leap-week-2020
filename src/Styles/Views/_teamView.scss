@@ -1,0 +1,164 @@
+.team-view {
+  width: 100%;
+  width: 100vw;
+  >.footerSpace{
+    padding-bottom: 100px;
+  }
+  >.content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    .teamHead{
+      align-content: center;
+      text-align: center;
+      .teamIMG{
+      width: 70%;
+      }
+    }
+    .whoAreWeText{
+      text-align: left;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      padding-left: 40px;
+      padding-right: 60px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    .teamInfo{
+      padding-top: 40px;
+    }
+    root: {
+      flexGrow: 1,
+    }
+    .paper {
+      text-align: center
+    }
+    .slides {
+      box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
+    }
+    .whatIs {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    .speakerSearch {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      padding-left: 60px;
+      padding-right: 60px;
+      text-align: center;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    .title {
+      align-content: center;
+      text-align: center;
+      padding-top: 100px;
+      padding-left: 60px;
+      padding-right: 60px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 40px;
+    }
+    .title-who {
+      padding-top: 40px;
+      padding-left: 40px;
+      padding-right: 60px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 40px;
+    }
+    .buttonContainer{
+      align-content: center;
+      text-align: center;
+      padding-top: 20px;
+      .button {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        background-color: rgba(2, 136, 209, 1);
+        box-shadow: 0 0 2px 1px rgba(2, 136, 209, 0.4);
+        display: inline-block;
+      }
+    }
+  }
+  @include mobile {
+    >.content {
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 40px;
+      .teamHead{
+        align-content: center;
+        text-align: center;
+        .teamIMG{
+        width: 80%;
+        }
+      }
+      .whoAreWeText{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .teamInfo{
+        padding-top: 40px;
+      }
+      root: {
+        flexGrow: 1,
+      }
+      .paper {
+        text-align: center
+      }
+      .slides {
+        box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
+      }
+      .whatIs {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .speakerSearch {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .title {
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        font-size: 40px;
+      }
+      .title-who {
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        font-size: 40px;
+      }
+    }
+}
+}

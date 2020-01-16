@@ -1,0 +1,36 @@
+.tickets{
+    text-align: center;
+    padding-top: 20px;
+    .title-ticket {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        font-size: 40px;
+        text-align: center;
+      }
+      .body-ticket {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        padding-bottom: 10px;
+      }
+      .mail-ticket {
+        color:rgba(2, 136, 209, 1);
+      }
+    .buttonContainer{
+        align-content: center;
+        text-align: center;
+        padding-top: 20px;
+        .button {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 800;
+          font-size: 20px;
+          text-align: center;
+          color: white;
+          background-color: rgba(2, 136, 209, 1);
+          box-shadow: 0 0 2px 1px rgba(2, 136, 209, 0.4);
+          display: inline-block;
+        }
+    }
+}
