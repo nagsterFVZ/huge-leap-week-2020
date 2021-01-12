@@ -7,4 +7,5 @@ The website does not need a DB to run or function, the db is just for the ticket
 
 ### How to run
 1. Open a terminal in the directory and run `npm i`
-2. Now run `npm run watch`
+2. Open a terminal in the directory and run `npm audit fix`
+3. Now run `npm run watch`
